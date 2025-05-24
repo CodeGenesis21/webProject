@@ -1,6 +1,76 @@
-body{
-    background-color: #FFFFFF;
+body {
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
 }
-h1{
-    text-align: center;
+.review-section {
+  margin: 40px 0;
+  justify-content: space-around;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+h1 span {
+  background: linear-gradient(to left, #c72092, #6c14d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 15px;
+}
+
+.review {
+  background-color: #f3f1f1;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin: 2%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .review {
+    width: 48%;
+    margin: 3%;
+  }
+}
+
+@media (min-width: 992px) {
+  .review {
+    min-width: 29%;
+  }
+}
+.profile {
+  display: flex;
+  padding: 5px;
+  cursor: pointer;
+}
+.profile-img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+.profile-img:hover {
+  height: 70px;
+  width: 70px;
+}
+.profile-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.profile-name {
+  font-size: 20px;
+  margin-left: 10px;
+  line-height: 20px;
+}
+.review-text {
+  font-size: 20px;
+}
+.star {
+  color: orange;
+  display: inline-block;
+  font-size: 12px;
 }
