@@ -171,6 +171,154 @@ img{
     border-radius: 50%; 
 }
 }
+/* Container */
+section h1{
+padding-top: 80px;
+text-align: center;
+padding-bottom: 30px;
+}
+section h1::after {
+      content: '';
+      display: block;
+      width: 56px;
+      height: 3px;
+      background-color: #4dc0b5;
+      margin: 10px auto 0;
+   }
+.cover{
+  padding-bottom: 120px;
+  margin-top: 30px;
+}
+.quality {
+  position: relative;
+  width: 270px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border: 1px solid #22B8A1; 
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: 0.3s;
+  margin-bottom: 18px;
+  margin-right: 6px;
+}
+.image {
+  padding-left: 30px; 
+  overflow: hidden;   
+}
+.image img {
+  transition: transform 0.3s ease;
+  transform-origin: left center;
+}
+.quality:hover .image img {
+  transform: scale(1.05);
+}
+.quality:hover .show-react {
+  opacity: 1;
+  transform: translateY(0);
+}
+.show-react {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: 0.3s;
+}
+
+.show-react i {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.first-react {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/833/833472.png'); 
+}
+.sec-react {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/833/833539.png'); 
+}
+.image img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.products_text h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.products_text p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.products_text h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.products_star {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.products_star i {
+  width: 20px;
+  height: 20px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/1828/1828884.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background-image: linear-gradient(to right, #c81eda, #7734f9);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .infos {
   flex: 1;
   margin: 10px;
