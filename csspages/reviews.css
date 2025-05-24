@@ -16,7 +16,7 @@ h1 span {
   background: linear-gradient(to left, #c72092, #6c14d0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 15px;
+  margin: 15px;
 }
 
 .review {
@@ -24,13 +24,12 @@ h1 span {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 20px;
-  margin-bottom: 20px;
   margin: 2%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .review {
     width: 48%;
-    margin: 3%;
+    margin-left: 20px;
   }
 }
 
